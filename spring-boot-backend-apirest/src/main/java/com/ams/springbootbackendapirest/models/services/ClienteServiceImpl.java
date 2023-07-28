@@ -3,11 +3,13 @@ package com.ams.springbootbackendapirest.models.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Service;
 
 import com.ams.springbootbackendapirest.models.doa.IClienteDao;
 import com.ams.springbootbackendapirest.models.entity.Cliente;
 
+
+@Service
 public class ClienteServiceImpl implements IClienteService {
 	
 	//inyectamos con Autowired
