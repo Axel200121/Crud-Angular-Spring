@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class DirectivaComponent {
   
   listaCurso: string[] = ['Typescript','javascript','php','java'];
+  habilitar: boolean = true;
 
-  
+
+  setHabilitar(): void{
+    this.habilitar = (this.habilitar == true)? false : true
+  }
 
 }
