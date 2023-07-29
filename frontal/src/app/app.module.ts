@@ -10,6 +10,8 @@ import { Routes,RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './clientes/form.component';
 import { FormsModule } from '@angular/forms';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 
 const routes:Routes=[
   {path:'', redirectTo:'/clientes', pathMatch:'full'},
@@ -31,7 +33,8 @@ const routes:Routes=[
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    SweetAlert2Module.forRoot()
   
   ],
   providers: [],
